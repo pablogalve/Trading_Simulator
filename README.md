@@ -1,6 +1,12 @@
 # ExchangeBroker
-This is a trading simulator written in c# using Unity, where you can trade using both cash and shares
+## Description
+This is a trading simulator, where you have to trade in the market to become the richest player in the world!
 
-This project was initially created in August 2018, but uploaded to github on 25th March 2019.
+## Controls
+* Move using key arrows
+* Mouse to select orders
 
-It's not finished and development is stopped, but still it is functional and can be tested. (Take into account that there may be bugs and errors)
+## Features
+* Buy/Sell shares of a company
+* Receive dividends in cash and shares only by holding shares
+* You can give and requests loans with interest
