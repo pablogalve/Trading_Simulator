@@ -159,26 +159,26 @@ public class Variables : MonoBehaviour {
     }
     void SetCost()
     {
-        Cost.text = (Price*Amount).ToString() + "$";
+        Cost.text = (Price*Amount).ToString() + "€";
     }
     void SetMarketData()
     {
-        lastPricetext.text = "Last price: " + lastPrice.ToString("0.######") + " $";
-        totalValuationtext.text = "Company Valuation: " + totalValuation.ToString("#") + " $";
+        lastPricetext.text = "Last price: " + lastPrice.ToString("0.######") + " €";
+        totalValuationtext.text = "Company Valuation: " + totalValuation.ToString("#") + " €";
         totalSharestext.text = "Total Shares: " + totalShares.ToString("#");
-        dividendsFiattext.text = "Next dividends: " + DividendsFiat.ToString("0.####") + " $";
+        dividendsFiattext.text = "Next dividends: " + DividendsFiat.ToString("0.####") + " €";
         dividendsSharetext.text = "Next dividends: " + DividendsShare.ToString("0.####") + " shares";
-        dividendsPerSharetext.text = "For holding 1000 shares, you will receive: " + (1000*DividendsFiat/totalShares).ToString("0.######") +"$ + " + (1000*DividendsShare/totalShares).ToString("0.######") + " shares";
+        dividendsPerSharetext.text = "For holding 1000 shares, you will receive: " + (1000*DividendsFiat/totalShares).ToString("0.######") +"€ + " + (1000*DividendsShare/totalShares).ToString("0.######") + " shares";
         hourtext.text = "Hour: " + Hour.ToString("0") + "   (1 day = 24hours)";
         daytext.text = "Today is day #" + Day.ToString() + ".                                    Dividends are shared every 5 days";
         loanInterestText.text = "Loan Interest Rate: " + (100*LoanInterest-100).ToString() + "%";
         debtInterestText.text = "Debt Interest Rate: " + (100*DebtInterest-100).ToString() + "%";
-        owedText.text = "You will receive: $" + Owed.ToString("0.##");
-        toPayText.text = "You will have a debt of: $" + toPay.ToString("0.##");
-        buyBackText.text = "Buy Back: $" + BuyBack.ToString("0.##");
-        safetyNetText.text = "Safety Net Fund Pool: $" + SafetyNet.ToString("0.##");
-        devFundsText.text = "Dev Funds: $" + DevFunds.ToString("0.##");
-        availableToRepay.text = "Available for Loaners: $" + loanController.availableToRepay;
+        owedText.text = "You will receive: €" + Owed.ToString("0.##");
+        toPayText.text = "You will have a debt of: €" + toPay.ToString("0.##");
+        buyBackText.text = "Buy Back: €" + BuyBack.ToString("0.##");
+        safetyNetText.text = "Safety Net Fund Pool: €" + SafetyNet.ToString("0.##");
+        devFundsText.text = "Dev Funds: €" + DevFunds.ToString("0.##");
+        availableToRepay.text = "Available for Loaners: €" + loanController.availableToRepay;
     }   
     void DistributeDividends() //Distribute dividends to all shareholders
     {

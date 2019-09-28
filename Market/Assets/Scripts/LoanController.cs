@@ -70,15 +70,19 @@ public class LoanController : MonoBehaviour {
     }
     public void SetMeLoaner()
     {
-        GiveLoan(shareHolder.playerName, variables.loanFunds);
+        GiveLoan(shareHolder.playerName, variables.loanFunds, 1.05f);
     }
-    public void GiveLoan(string loaner, float loanFunds) 
+    public void GiveLoan(string loaner, float loanFunds, float interestRate) 
     {
         CheckEnough(loaner, loanFunds);
         if (canInvest)
         {
-            Owed = variables.LoanInterest * loanFunds;
-            var newLoan = new LoanController(loaner, loanFunds, Owed, variables.LoanInterest, variables.Day);
+            //We change the interest rate from number (12%) to multiplier (1.12f)
+            interestRate /= 100;
+            interestRate += 1;
+
+            Owed = interestRate * loanFunds;
+            var newLoan = new LoanController(loaner, loanFunds, Owed, interestRate, variables.Day);
             loanList.Add(newLoan);
             int index = shareHolder.GetIndexOfUser(loaner);
             shareHolder.ShareholdersList[index].Funds -= loanFunds;
@@ -230,7 +234,7 @@ public class LoanController : MonoBehaviour {
         {
             int index = 0;
             float amount = 0;
-            float fee = 0.85f; //15% for the interest
+            float fee = 0.85f; //15% fee
             if (loanList[0].Owed <= availableToRepay)
             {
                 amount = loanList[0].Owed;

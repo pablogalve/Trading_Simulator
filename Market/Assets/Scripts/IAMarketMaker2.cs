@@ -43,7 +43,7 @@ public class IAMarketMaker2 : MonoBehaviour
     }
 	void GiveLoan()
 	{
-        loanController.GiveLoan(shareHolder.IAMarketMaker1name, 500);
+        loanController.GiveLoan(shareHolder.IAMarketMaker1name, 500, 1.1f);
         loanController.AskDebt(shareHolder.IAMarketMaker2name, 500);
 	}
 }
