@@ -12,8 +12,11 @@ This is a trading simulator, where you have to trade in the market to become the
 * You can give and requests loans with interest
 
 ## Team
-[Pablo Galve](https://github.com/pablogalve)
+* [Pablo Galve](https://github.com/pablogalve)
 
+## Github Repository
+https://github.com/pablogalve/Trading_Simulator 
+ 
 # License
 MIT License
 
