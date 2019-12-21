@@ -7,9 +7,12 @@ This is a trading simulator, where you have to trade in the market to become the
 * Mouse to select orders
 
 ## Features
-* Buy/Sell shares of a company
-* Receive dividends in cash and shares only by holding shares
-* You can give and requests loans with interest
+* Market
+   * Buy/Sell shares 
+   * Receive dividends in both cash and shares
+* Loan System
+   * Give loans and receive interest
+   * Ask for a loan to get leverage
 
 ## Team
 * [Pablo Galve](https://github.com/pablogalve)
@@ -20,7 +23,7 @@ https://github.com/pablogalve/Trading_Simulator
 # License
 MIT License
 
-Copyright (c) 2019 Bernat-Pablo
+Copyright (c) 2019 Moon Funding LTD
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
