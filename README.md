@@ -1,4 +1,4 @@
-# ExchangeBroker
+# Trading Simulator
 ## Description
 This is a trading simulator, where you have to trade in the market to become the richest player in the world!
 
